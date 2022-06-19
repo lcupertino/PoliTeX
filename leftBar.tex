@@ -1,4 +1,5 @@
-\documentclass[tikz]{standalone}
+\documentclass[a4paper]{standalone}
+\usepackage{tikz}
 \usepackage{xcolor}
 \definecolor{poliBlack}{RGB}{0, 8, 20}
 \definecolor{poliBlue}{RGB}{0, 29, 61}
@@ -8,7 +9,12 @@
 
 \begin{document}
 	\begin{tikzpicture}
-		\draw[draw = poliBlue, fill=poliBlue, thick] (0,0) rectangle (1.2, 20);
-%		\draw[draw = poliYellow, fill=poliYellow, thick](0,0) rectangle(0.1,20);
+		\def \WIDTH{5};
+		\def \HEIGHT{20};
+		\def \ORIGIN{(0,0)};
+		
+		\draw[draw = poliBlue, fill=poliBlue, thick] \ORIGIN rectangle (\WIDTH, \HEIGHT);
+
+		\draw[thick, white, latex-] (0,0) -- (1,1);
 	\end{tikzpicture}		
 \end{document}
