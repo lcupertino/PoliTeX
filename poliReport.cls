@@ -51,9 +51,9 @@
 %\ThisLRCornerWallPaper{0.1}{logos/brasao_usp_pb.png}
 	\centering %Centraliser le contenu
 	\includegraphics[width=0.25\textwidth]{logos/EP.jpg}\par\vspace{1cm} %Insertion du logo
-	{\scshape\LARGE École Centrale Lyon \par} %Nom de l'université
+	{\scshape\LARGE Escola Politécnica \par} %Nom de l'université
 	\vspace{1.5cm}%Espace de 1,5cm
-	{\scshape\Large \UE \\ \sujet \\ Rapport\par} %sous-titre
+	{\scshape\Large \UE \\ \sujet \\ PCS-1234\par} %sous-titre
 	\vspace{1cm}%Espace de 1cm
     \rule{\linewidth}{0.2 mm} \\[0.4 cm]
 	{\huge\bfseries \titre \par} \
