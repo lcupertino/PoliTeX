@@ -1,28 +1,30 @@
-\LoadClass[a4paper, 12pt]{article}
+\LoadClass[a4paper, 12pt]{report}
 
-\RequirePackage[french]{babel} %Langue du document
-\RequirePackage[utf8]{inputenc} %Caractères spéciaux
-\RequirePackage[section]{placeins}%Pour placement de section
-\RequirePackage[T1]{fontenc} %Quelques lettres qui sont pas inclus dans UTF-8
-\RequirePackage{mathtools} %Paquet pour des équations et symboles mathématiques
-\RequirePackage{siunitx} %Pour écrire avec la notation scientifique (Ex.: \num{2e+9})
-\RequirePackage{float} %Pour placement d'images
-\RequirePackage{graphicx} %Paquet pour insérer des images
-\RequirePackage[justification=centering]{caption} %Pour les légendes centralisées
+\RequirePackage[french]{babel}
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[section]{placeins}
+\RequirePackage[T1]{fontenc}
+\RequirePackage{mathtools}
+\RequirePackage{siunitx}
+\RequirePackage{float}
+\RequirePackage{graphicx}
+\RequirePackage[justification=centering]{caption}
 \RequirePackage{subcaption}
 \RequirePackage{wallpaper}
 \RequirePackage{nomencl}
-%\makenomenclature
 \RequirePackage{fancyhdr}
-%\pagestyle{fancy}
-%\fancyheadoffset{1cm}
-%\setlength{\headheight}{2cm}
 \RequirePackage{url}
-\RequirePackage[hidelinks]{hyperref}%Paquet pour insérer légendes dans des sous-figures comme Figure 1a, 1b
-\RequirePackage[left=2.5cm,right=2.5cm,top=2cm,bottom=3.5cm]{geometry} %Configuration de la page
+\RequirePackage[hidelinks]{hyperref}
+\RequirePackage[left=2.5cm,right=2.5cm,top=2cm,bottom=3.5cm]{geometry}
 
+%-------------------- Comandos ----------------------%
 
-%-------------------- Informations sur le rapport ----------------------
+%\newcommand{\subject}[1]{}
+%\newcommand{\title}{\renewcommand{\title}{#1}}
+%\newcommand{\professor}[1]{}
+%\newcommand{\students}[1]{\renewcommand{\author}{#1}}
+
+%-------------------- Informations sur le rapport ----------------------%
 
 \newcommand{\UE}[1]{\renewcommand{\UE}{#1}}
 \newcommand{\sujet}[1]{\renewcommand{\sujet}{#1}}
@@ -46,9 +48,9 @@
 
 \begin{titlepage}
 
-\ThisLRCornerWallPaper{0.4}{logos/EP.jpg}
+%\ThisLRCornerWallPaper{0.1}{logos/brasao_usp_pb.png}
 	\centering %Centraliser le contenu
-	\includegraphics[width=0.2\textwidth]{logos/EP.jpg}\par\vspace{1cm} %Insertion du logo
+	\includegraphics[width=0.25\textwidth]{logos/EP.jpg}\par\vspace{1cm} %Insertion du logo
 	{\scshape\LARGE École Centrale Lyon \par} %Nom de l'université
 	\vspace{1.5cm}%Espace de 1,5cm
 	{\scshape\Large \UE \\ \sujet \\ Rapport\par} %sous-titre
@@ -60,14 +62,14 @@
     
 	\begin{minipage}{0.5\textwidth} %Minipage pour faire deux colonnes
 		\begin{flushleft} \large %Envoyer à gauche
-		\emph{\textbf{Élèves :}}\\ %Pour le titre au dessus des noms à gauche
+		\textbf{Integrantes:}\\ %Pour le titre au dessus des noms à gauche
         \eleves\\ %Remplacer pour chacun
 		\end{flushleft}
 	\end{minipage}
 	~
 	\begin{minipage}{0.4\textwidth}
 		\begin{flushright} \large
-		\emph{\textbf{Enseignant :}} \\
+		\textbf{Professor:} \\
 		 \enseignant \\
 		\end{flushright}
 	\end{minipage}\\[4cm]
